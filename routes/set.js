@@ -18,19 +18,12 @@ const acceptedParams = (paramName, validSections) => {
     });
 };
 
-router.get('/set/nationaldaily', apiError, async (req, res) => {
-  let error;
-  await dataLoader.nationaldaily().catch((err) => {
-    error = res.status(500).send(err);
-  });
-  return error || res.status(200).send('OK');
-});
-
 router.get(
   '/set/:data',
   [acceptedParams('data', Object.keys(apiLinks)), apiError],
   async (req, res) => {
     let error;
+    // @ts-ignore
     const apiResponse = await fetch(apiLinks[req.params.data]).catch((err) => {
       error = res.status(503).json(err);
     });

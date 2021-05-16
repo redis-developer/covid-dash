@@ -1,6 +1,7 @@
 {
+  "LINKS": ["daily", "total"],
   "apiLinks": {
-    "statedaily": "https://api.covid19india.org/v4/min/data.min.json",
+    "daily": "https://api.covid19india.org/v4/min/data.min.json",
     "total": "https://covid19-mohfw.herokuapp.com/"
   },
   "codeState": {

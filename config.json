@@ -1,13 +1,13 @@
 {
-    "logLevel": "debug",
-    "application": {
-        "port": 8081
-    },
-    "redis": {
-        "host": "localhost",
-        "port": 6379,
-        "password": null,
-        "autoPipelining": true,
-        "keyPrefix": "covid"
-    }
+  "logLevel": "debug",
+  "application": {
+    "port": 8081
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "password": null,
+    "autoPipelining": false,
+    "keyPrefix": "covid"
+  }
 }
