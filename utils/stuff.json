@@ -2,7 +2,8 @@
   "LINKS": ["daily", "total"],
   "apiLinks": {
     "daily": "https://api.covid19india.org/v4/min/data.min.json",
-    "total": "https://covid19-mohfw.herokuapp.com/"
+    "total": "https://covid19-mohfw.herokuapp.com/",
+    "timeseries": "https://api.covid19india.org/v4/min/timeseries.min.json"
   },
   "codeState": {
     "AN": "Andaman and Nicobar Islands",

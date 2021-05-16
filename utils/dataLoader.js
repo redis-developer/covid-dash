@@ -44,4 +44,11 @@ const total = (data) => {
   return pipeline.exec();
 };
 
-module.exports = { daily, total };
+const timeseries = (data) => {
+  Object.entries(data).forEach(([stateName, stateJSON]) => {
+    // @ts-ignore
+    pipeline.call('JSON.SET', `t:${stateName}`, stateJSON);
+  });
+  return pipeline.exec();
+};
+module.exports = { daily, total, timeseries };
