@@ -37,7 +37,7 @@ The Redis keys are split into parts:
 - `:delta:` and `:delta7:` parts are present for daily keys, they contain the daily and 7 day average data respectively.
 - `:LK`, `:KL`, etc are the last part of key, they are the state/union territorry ISO 3166-2:IN codes a.k.a just short-forms.\
   The list of codes to full names are present in `.\utils\stuff.json`
-- The database contains
+- The database also contains all-time timeseries and more
 
 ### Upcoming Features
 
